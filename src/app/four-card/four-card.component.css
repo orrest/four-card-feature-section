@@ -1,0 +1,72 @@
+article {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1.5rem;
+  padding-block: 4rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading p {
+  margin-block: 1rem;
+  max-inline-size: 55ch;
+}
+
+.models {
+  max-inline-size: 21.875rem;
+  margin-block-start: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.model {
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 1rem 2rem -0.6875rem var(--gray);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 1.5rem;
+}
+
+.model img {
+  align-self: flex-end;
+}
+
+.supervisor {
+  border-block-start: 0.5rem solid var(--cyan);
+}
+
+.team-builder {
+  border-block-start: 0.5rem solid var(--red);
+}
+
+.karma {
+  border-block-start: 0.5rem solid var(--orange);
+}
+
+.calculator {
+  border-block-start: 0.5rem solid var(--blue);
+}
+
+.model img {
+  inline-size: 4rem;
+  block-size: 4rem;
+}
+
+@media (min-width: 1110px) {
+  .models {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .model {
+    min-inline-size: 15rem;
+    max-block-size: 10rem;
+    align-self: center;
+  }
+}

@@ -1,0 +1,31 @@
+<article>
+  <section class="heading">
+    <h1 class="poppins-extralight font-settings-h1">{{ title }}</h1>
+    <h2 class="poppins-semibold font-settings-h2">{{ poweredBy }}</h2>
+    <p class="poppins-regular font-settings-main">{{ intro }}</p>
+  </section>
+  <section class="models">
+    <section class="model supervisor">
+      <h3 class="poppins-semibold font-settings-h3">{{ supervisor.title }}</h3>
+      <p class="poppins-regular font-settings-sub">{{ supervisor.intro }}</p>
+      <img src="{{ supervisor.url }}" alt="supervisor">
+    </section>
+    <section>
+      <section class="model team-builder">
+        <h3 class="poppins-semibold font-settings-h3">{{ teamBuilder.title }}</h3>
+        <p class="poppins-regular font-settings-sub">{{ teamBuilder.intro }}</p>
+        <img src="{{ teamBuilder.url }}" alt="team-builder">
+      </section>
+      <section class="model karma">
+        <h3 class="poppins-semibold font-settings-h3">{{ karma.title }}</h3>
+        <p class="poppins-regular font-settings-sub">{{ karma.intro }}</p>
+        <img src="{{ karma.url }}" alt="karma">
+      </section>
+    </section>
+    <section class="model calculator">
+      <h3 class="poppins-semibold font-settings-h3">{{ calculator.title }}</h3>
+      <p class="poppins-regular font-settings-sub">{{ calculator.intro }}</p>
+      <img src="{{ calculator.url }}" alt="calculator">
+    </section>
+  </section>
+</article>
