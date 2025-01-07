@@ -5,27 +5,12 @@
     <p class="poppins-regular font-settings-main">{{ intro }}</p>
   </section>
   <section class="models">
-    <section class="model supervisor">
-      <h3 class="poppins-semibold font-settings-h3">{{ supervisor.title }}</h3>
-      <p class="poppins-regular font-settings-sub">{{ supervisor.intro }}</p>
-      <img src="{{ supervisor.url }}" alt="supervisor">
+    @for (model of models; track $index) {
+    <section class="model">
+      <h3 class="poppins-semibold font-settings-h3">{{ model.title }}</h3>
+      <p class="poppins-regular font-settings-sub">{{ model.intro }}</p>
+      <img src="{{ model.url }}" alt="{{model.title}}">
     </section>
-    <section>
-      <section class="model team-builder">
-        <h3 class="poppins-semibold font-settings-h3">{{ teamBuilder.title }}</h3>
-        <p class="poppins-regular font-settings-sub">{{ teamBuilder.intro }}</p>
-        <img src="{{ teamBuilder.url }}" alt="team-builder">
-      </section>
-      <section class="model karma">
-        <h3 class="poppins-semibold font-settings-h3">{{ karma.title }}</h3>
-        <p class="poppins-regular font-settings-sub">{{ karma.intro }}</p>
-        <img src="{{ karma.url }}" alt="karma">
-      </section>
-    </section>
-    <section class="model calculator">
-      <h3 class="poppins-semibold font-settings-h3">{{ calculator.title }}</h3>
-      <p class="poppins-regular font-settings-sub">{{ calculator.intro }}</p>
-      <img src="{{ calculator.url }}" alt="calculator">
-    </section>
+    }
   </section>
 </article>
